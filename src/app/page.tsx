@@ -101,12 +101,26 @@ function Navbar() {
 
 /* ─── Hero ─── */
 function Hero() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [result, setResult] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email) setSubmitted(true);
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.currentTarget);
+    formData.append("access_key", "5bd7df29-738b-4d2d-98e0-20e785993d5a");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      setResult("Thank you for requesting early access! We'll keep you up to date.");
+      event.currentTarget.reset();
+    } else {
+      setResult("Error in submitting the form. Please try again later.");
+    }
   };
 
   return (
@@ -135,33 +149,29 @@ function Hero() {
           emails, and lets you send or schedule them — all from one dashboard.
         </p>
 
-        {/* Email signup */}
-        {submitted ? (
-          <div className="mx-auto mt-10 max-w-md rounded-xl border border-green-200 bg-green-50 px-6 py-4 text-green-700">
-            <p className="font-semibold">You&apos;re on the list! 🎉</p>
-            <p className="mt-1 text-sm">We&apos;ll notify you when we launch.</p>
-          </div>
-        ) : (
-          <form
-            onSubmit={handleSubmit}
-            className="mx-auto mt-10 flex max-w-md flex-col gap-3 sm:flex-row"
-          >
-            <input
-              type="email"
-              required
-              placeholder="you@email.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 rounded-lg border border-gray-300 px-4 py-3 text-sm shadow-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-            />
-            <button
-              type="submit"
-              className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-dark hover:shadow-md"
-            >
-              Get Early Access
-            </button>
-          </form>
-        )}
+        <div className="mb-6 mt-6">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <form className="flex flex-col sm:flex-row gap-3 max-w-l mx-auto w-full" onSubmit={onSubmit}>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      className="flex-grow sm:flex-[2] px-4 py-2 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                      required
+                    />
+                    <button 
+                      type="submit"
+                      className="sm:flex-[1] bg-gradient-to-r from-primary to-accent text-white hover:opacity-90 transition-opacity shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.25)]"
+                    >
+                      Request Early Access
+                    </button>
+                  </form>
+              </div>
+              {result && (
+                    <p className="text-sm text-green-600 mt-4">{result}</p>
+                  )}
+            </div>    
+
         <p className="mt-4 text-xs text-gray-400">
           Join 1,000+ marketers on the waitlist. No spam, ever.
         </p>
@@ -371,6 +381,7 @@ const plans = [
       "Lead contact export",
       "Email scheduling",
       "Follow-up sequences",
+      "Use your own email domain",
       "Priority support",
     ],
     cta: "Scale Up",
@@ -562,6 +573,7 @@ function Footer() {
     </footer>
   );
 }
+
 
 /* ─── Page ─── */
 export default function Home() {
