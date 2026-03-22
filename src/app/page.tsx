@@ -390,6 +390,14 @@ const plans = [
 ];
 
 function Pricing() {
+  // Scroll to the Hero section (Request Early Access form)
+  const scrollToHero = () => {
+    const hero = document.getElementById("hero");
+    if (hero) {
+      hero.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section id="pricing" className="bg-white py-24">
       <div className="mx-auto max-w-6xl px-6">
@@ -452,6 +460,7 @@ function Pricing() {
                     ? "bg-primary text-white shadow-sm hover:bg-primary-dark hover:shadow-md"
                     : "border border-gray-300 text-gray-700 hover:border-primary hover:text-primary"
                 }`}
+                onClick={scrollToHero}
               >
                 {p.cta}
               </button>
