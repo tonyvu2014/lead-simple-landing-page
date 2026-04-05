@@ -8,7 +8,7 @@ function Logo({ className = "h-8 w-8" }: { className?: string }) {
   return (
     <Image
       src="/logo.svg"
-      alt="LeadSimple.AI logo"
+      alt="LeadDaily.App logo"
       width={32}
       height={32}
       className={className}
@@ -32,7 +32,7 @@ function Navbar() {
         <a href="#" className="flex items-center gap-2">
           <Logo />
           <span className="text-lg font-bold text-gray-900">
-            LeadSimple<span className="text-primary">.AI</span>
+            LeadDaily<span className="text-primary">.App</span>
           </span>
         </a>
 
@@ -138,42 +138,49 @@ function Hero() {
           AI-Powered Lead Generation
         </div>
         <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-          Find and Email Online Leads{" "}
+          Grow Your Leads Everyday{" "}
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            with Ease Using AI
+            Using AI
           </span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 sm:text-xl">
-          LeadSimple.AI discovers potential leads&apos; emails online based on
-          your product description, crafts personalized cold &amp; follow-up
+          LeadDaily.App discovers potential leads&apos; emails online based on
+          your product description, crafts customised cold &amp; follow-up
           emails, and lets you send or schedule them — all from one dashboard.
         </p>
 
         <div className="mb-6 mt-6">
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <form className="flex flex-col sm:flex-row gap-3 max-w-l mx-auto w-full" onSubmit={onSubmit}>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Enter your email"
-                      className="flex-grow sm:flex-[2] px-4 py-2 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                      required
-                    />
-                    <button 
-                      type="submit"
-                      className="sm:flex-[1] bg-gradient-to-r from-primary to-accent text-white hover:opacity-90 transition-opacity shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.25)]"
-                    >
-                      Request Early Access
-                    </button>
-                  </form>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="w-full">
+              <div className="mb-6 flex justify-center">
+                <span className="inline-block rounded-full bg-yellow-400/90 px-4 py-1.5 text-sm font-semibold text-yellow-900 border border-yellow-300 shadow-sm animate-pulse">
+                  <span className="font-bold">Sign up now to get 40% discount!</span> Promotion ends 30/4/2026
+                </span>
               </div>
+              <form className="flex flex-col sm:flex-row gap-3 max-w-l mx-auto w-full" onSubmit={onSubmit}>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  className="flex-grow sm:flex-[2] px-4 py-2 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                  required
+                />
+                <button 
+                  type="submit"
+                  className="sm:flex-[1] bg-gradient-to-r from-primary to-accent text-white hover:opacity-90 transition-opacity shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.25)]"
+                >
+                  Request Early Access
+                </button>
+              </form>
               {result && (
-                    <p className="text-sm text-green-600 mt-4">{result}</p>
-                  )}
-            </div>    
+                <p className="text-sm text-green-600 mt-4">{result}</p>
+              )}
+            </div>
+          </div>
+        </div>
 
         <p className="mt-4 text-xs text-gray-400">
-          Join 1,000+ marketers on the waitlist. No spam, ever.
+          Join 1,000+ marketers on the waitlist.
         </p>
       </div>
     </section>
@@ -230,8 +237,8 @@ function Features() {
             <span className="text-primary">Win More Leads</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-gray-600">
-            From finding prospects to closing deals — LeadSimple.AI automates
-            the entire outreach pipeline so you can focus on growing your
+            From finding prospects to closing deals — LeadDaily.App automates
+            the outreach pipeline so you can focus on growing your
             business.
           </p>
         </div>
@@ -269,7 +276,7 @@ const steps = [
   },
   {
     num: "02",
-    title: "Generate Personalized Emails",
+    title: "Generate Emails",
     desc: "AI crafts compelling cold outreach and follow-up email sequences for your product for maximum engagement.",
     icon: (
       <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -355,6 +362,7 @@ const plans = [
   {
     name: "Start",
     price: "$4.99",
+    originalPrice: "$7.99",
     period: "/month",
     desc: "Great for growing businesses",
     features: [
@@ -372,6 +380,7 @@ const plans = [
   {
     name: "Scale",
     price: "$7.99",
+    originalPrice: "$12.99",
     period: "/month",
     desc: "For teams that need more power",
     features: [
@@ -430,7 +439,12 @@ function Pricing() {
               <h3 className="text-lg font-semibold text-gray-900">{p.name}</h3>
               <p className="mt-1 text-sm text-gray-500">{p.desc}</p>
 
-              <div className="mt-6 flex items-baseline gap-1">
+              <div className="mt-6 flex items-baseline gap-2">
+                {p.originalPrice && (
+                  <span className="text-xl font-semibold text-gray-400 line-through mr-2">
+                    {p.originalPrice}
+                  </span>
+                )}
                 <span className="text-4xl font-extrabold text-gray-900">
                   {p.price}
                 </span>
@@ -475,12 +489,12 @@ function Pricing() {
 /* ─── FAQ ─── */
 const faqs = [
   {
-    q: "How does LeadSimple.AI find leads?",
+    q: "How does LeadDaily.App find leads?",
     a: "You describe your product or service and target audience, and our AI searches the web to find relevant people and businesses with publicly available email addresses that match your criteria.",
   },
   {
     q: "Do I need any technical skills to use it?",
-    a: "Not at all. LeadSimple.AI is designed to be intuitive — just describe your product, review the leads and generated emails, and hit send. No coding or technical knowledge required.",
+    a: "Not at all. LeadDaily.App is designed to be intuitive — just describe your product, review the leads and generated emails, and hit send. No coding or technical knowledge required.",
   },
   {
     q: "What kinds of emails does the AI generate?",
@@ -499,8 +513,8 @@ const faqs = [
     a: "Absolutely. You can upgrade, downgrade, or cancel your plan at any time from your account settings. No long-term contracts or hidden fees.",
   },
   {
-    q: "What type of target audience is LeadSimple.AI best for?",
-    a: "LeadSimple.AI is best for finding target customers who have an online presence and display their contact emails publicly. For example: bloggers and content creators with contact pages, small business owners with emails on their websites, freelancers and consultants listed on directories, e-commerce store owners, SaaS founders active on social platforms, and professionals listed on industry-specific marketplaces.",
+    q: "What type of target audience is LeadDaily.App best for?",
+    a: "LeadDaily.App is best for finding target customers who have an online presence and display their contact emails publicly. For example: bloggers and content creators with contact pages, small business owners with emails on their websites, freelancers and consultants listed on directories, e-commerce store owners, SaaS founders active on social platforms, and professionals listed on industry-specific marketplaces.",
   },
 ];
 
@@ -566,17 +580,17 @@ function Footer() {
           <Logo />
           <div>
             <span className="text-sm font-bold text-gray-900">
-              LeadSimple<span className="text-primary">.AI</span>
+              LeadDaily<span className="text-primary">.App</span>
             </span>
             <p className="text-xs text-gray-500">
-              Find and email online leads with ease using AI.
+              Grow Your Leads Everyday Using AI.
             </p>
           </div>
         </div>
 
         {/* Right: Copyright */}
         <p className="text-xs text-gray-400">
-          &copy; {new Date().getFullYear()} LeadSimple.AI. All rights reserved.
+          &copy; {new Date().getFullYear()} LeadDaily.App. All rights reserved.
         </p>
       </div>
     </footer>

@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LeadSimple.AI - Find and Email Online Leads with Ease Using AI",
+  title: "LeadDaily.App - Grow Your Leads Every Day Using AI",
   description:
-    "LeadSimple.AI uses AI to find potential leads, generate personalized cold and follow-up emails, and lets you send or schedule them — all in one place.",
+    "LeadDaily.App uses AI to find potential leads, generate customised cold and follow-up emails, and lets you send or schedule them — all in one place.",
   keywords:
-    "AI lead generation, cold email, follow-up email, online leads, sales automation, email scheduling, personalized emails, B2B leads, sales outreach, lead conversion, LeadSimple.AI",
+    "AI lead generation, cold email, follow-up email, online leads, sales automation, email scheduling, customised emails, B2B leads, sales outreach, lead conversion, LeadDaily.App",
   icons: {
     icon: "/favicon.svg",
   },
