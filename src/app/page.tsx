@@ -117,7 +117,6 @@ function Hero() {
     const data = await response.json();
     if (data.success) {
       setResult("Thank you for requesting early access! We'll keep you up to date.");
-      event.currentTarget.reset();
     } else {
       setResult("Error in submitting the form. Please try again later.");
     }
