@@ -149,7 +149,19 @@ function Hero() {
           emails, and lets you send or schedule them — all from one dashboard.
         </p>
 
+
         <div className="mb-6 mt-6">
+          {/* Demo App Button */}
+          <div className="flex justify-center mb-4">
+            <a
+              href="https://dashboard.leaddaily.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-accent px-6 py-2 text-base font-semibold text-white shadow hover:bg-accent/90 transition-colors"
+            >
+              🚀 Try the Demo App
+            </a>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <div className="w-full">
               <div className="mb-6 flex justify-center">
@@ -180,7 +192,7 @@ function Hero() {
         </div>
 
         <p className="mt-4 text-xs text-gray-400">
-          Join 1,000+ marketers on the waitlist.
+          Join waitlist to get 1000+ leads per month.
         </p>
       </div>
     </section>
@@ -368,10 +380,11 @@ const plans = [
     features: [
       "Up to 5 products",
       "Up to 1,000 leads/month",
+      "AI target audience recommendation",
       "AI email generation",
       "Lead contact export",
-      "Email scheduling",
-      "Follow-up sequences",
+      "Email sending and scheduling",
+      "Product management dashboard",
       "Priority support",
     ],
     cta: "Get Started",
@@ -386,10 +399,12 @@ const plans = [
     features: [
       "Up to 20 products",
       "Up to 5,000 leads/month",
+      "AI target audience recommendation",
       "AI email generation",
       "Lead contact export",
-      "Email scheduling",
-      "Follow-up sequences",
+      "Email sending and scheduling",
+      "Follow-up sequence",
+      "Product management dashboard",
       "Use your own email domain",
       "Priority support",
     ],
