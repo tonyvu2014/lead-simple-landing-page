@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { Analytics } from '@vercel/analytics/next';
 
 /* ─── Logo Component ─── */
 function Logo({ className = "h-8 w-8" }: { className?: string }) {
@@ -623,6 +624,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <Footer />
+      <Analytics />
     </>
   );
 }
