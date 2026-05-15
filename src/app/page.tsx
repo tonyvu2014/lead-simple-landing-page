@@ -154,7 +154,7 @@ function Hero() {
           {/* Demo App Button */}
           <div className="flex justify-center mb-4">
             <a
-              href="https://dashboard.leaddaily.app"
+              href="https://my.leaddaily.app"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block rounded-lg bg-accent px-6 py-2 text-base font-semibold text-white shadow hover:bg-accent/90 transition-colors"
