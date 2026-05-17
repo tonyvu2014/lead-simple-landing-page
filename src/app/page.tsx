@@ -25,6 +25,7 @@ function Navbar() {
     { label: "How It Works", href: "#how-it-works" },
     { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
   ];
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-md">
@@ -166,7 +167,7 @@ function Hero() {
             <div className="w-full">
               <div className="mb-6 flex justify-center">
                 <span className="inline-block rounded-full bg-yellow-400/90 px-4 py-1.5 text-sm font-semibold text-yellow-900 border border-yellow-300 shadow-sm animate-pulse">
-                  <span className="font-bold">Sign up now to get 40% discount!</span> Promotion ends 30/4/2026
+                  <span className="font-bold">Sign up now to get 40% discount!</span> Promotion ends 31/5/2026
                 </span>
               </div>
               <form className="flex flex-col sm:flex-row gap-3 max-w-l mx-auto w-full" onSubmit={onSubmit}>
