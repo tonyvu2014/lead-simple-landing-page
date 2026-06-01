@@ -167,7 +167,7 @@ function Hero() {
             <div className="w-full">
               <div className="mb-6 flex justify-center">
                 <span className="inline-block rounded-full bg-yellow-400/90 px-4 py-1.5 text-sm font-semibold text-yellow-900 border border-yellow-300 shadow-sm animate-pulse">
-                  <span className="font-bold">Sign up now to get 40% discount!</span> Promotion ends 31/6/2026
+                  <span className="font-bold">Sign up now to get 40% discount!</span> Promotion ends 30/06/2026
                 </span>
               </div>
               <form className="flex flex-col sm:flex-row gap-3 max-w-l mx-auto w-full" onSubmit={onSubmit}>
