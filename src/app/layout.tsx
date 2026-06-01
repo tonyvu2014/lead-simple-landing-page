@@ -13,11 +13,63 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LeadDaily.App - Grow Your Leads Every Day Using AI",
+  metadataBase: new URL("https://leaddaily.app"),
+  title: {
+    default: "LeadDaily.App - Grow Your Leads Every Day Using AI",
+    template: "%s | LeadDaily.App",
+  },
   description:
     "LeadDaily.App uses AI to find potential leads, generate customised cold and follow-up emails, and lets you send or schedule them — all in one place.",
-  keywords:
-    "AI lead generation, cold email, follow-up email, online leads, sales automation, email scheduling, customised emails, B2B leads, sales outreach, lead conversion, LeadDaily.App",
+  keywords: [
+    "AI lead generation",
+    "cold email",
+    "follow-up email",
+    "sales automation",
+    "email scheduling",
+    "B2B leads",
+    "sales outreach",
+    "lead conversion",
+    "LeadDaily.App",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    title: "LeadDaily.App - Grow Your Leads Every Day Using AI",
+    description:
+      "LeadDaily.App uses AI to find potential leads, generate customised cold and follow-up emails, and lets you send or schedule them — all in one place.",
+    siteName: "LeadDaily.App",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "LeadDaily.App - Grow your leads every day using AI",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "LeadDaily.App - Grow Your Leads Every Day Using AI",
+    description:
+      "LeadDaily.App uses AI to find potential leads, generate customised cold and follow-up emails, and lets you send or schedule them — all in one place.",
+    images: ["/opengraph-image"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
   icons: {
     icon: "/favicon.svg",
   },

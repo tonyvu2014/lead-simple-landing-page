@@ -6,6 +6,32 @@ export const metadata: Metadata = {
   title: "Privacy Policy – LeadDaily.App",
   description:
     "Read the LeadDaily.App Privacy Policy to understand how we collect, use, and protect your personal data.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  openGraph: {
+    type: "article",
+    title: "Privacy Policy – LeadDaily.App",
+    description:
+      "Read the LeadDaily.App Privacy Policy to understand how we collect, use, and protect your personal data.",
+    url: "https://leaddaily.app/privacy-policy",
+    siteName: "LeadDaily.App",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "LeadDaily.App privacy policy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy – LeadDaily.App",
+    description:
+      "Read the LeadDaily.App Privacy Policy to understand how we collect, use, and protect your personal data.",
+    images: ["/opengraph-image"],
+  },
 };
 
 function Logo({ className = "h-8 w-8" }: { className?: string }) {
