@@ -50,10 +50,12 @@ function Navbar() {
             </a>
           ))}
           <a
-            href="#hero"
+            href="https://my.leaddaily.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-dark"
           >
-            Get Early Access
+            Get Started
           </a>
         </div>
 
@@ -89,11 +91,13 @@ function Navbar() {
             </a>
           ))}
           <a
-            href="#hero"
+            href="https://my.leaddaily.app"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-2 block rounded-lg bg-primary px-4 py-2 text-center text-sm font-semibold text-white transition hover:bg-primary-dark"
           >
-            Get Early Access
+            Get Started
           </a>
         </div>
       )}
@@ -103,27 +107,6 @@ function Navbar() {
 
 /* ─── Hero ─── */
 function Hero() {
-  const [result, setResult] = useState("");
-
-  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.currentTarget);
-    formData.append("access_key", "5bd7df29-738b-4d2d-98e0-20e785993d5a");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-    if (data.success) {
-      setResult("Thank you for requesting early access! We'll keep you up to date.");
-    } else {
-      setResult("Error in submitting the form. Please try again later.");
-    }
-  };
-
   return (
     <section
       id="hero"
@@ -151,49 +134,27 @@ function Hero() {
         </p>
 
 
-        <div className="mb-6 mt-6">
-          {/* Demo App Button */}
-          <div className="flex justify-center mb-4">
-            <a
-              href="https://my.leaddaily.app/leads"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-lg bg-accent px-6 py-2 text-base font-semibold text-white shadow hover:bg-accent/90 transition-colors"
-            >
-              🚀 Try the Demo App
-            </a>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <div className="w-full">
-              <div className="mb-6 flex justify-center">
-                <span className="inline-block rounded-full bg-yellow-400/90 px-4 py-1.5 text-sm font-semibold text-yellow-900 border border-yellow-300 shadow-sm animate-pulse">
-                  <span className="font-bold">Sign up now to get 40% discount!</span> Promotion ends 30/06/2026
-                </span>
-              </div>
-              <form className="flex flex-col sm:flex-row gap-3 max-w-l mx-auto w-full" onSubmit={onSubmit}>
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  className="flex-grow sm:flex-[2] px-4 py-2 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="sm:flex-[1] bg-gradient-to-r from-primary to-accent text-white hover:opacity-90 transition-opacity shadow-[0_10px_40px_-10px_hsl(var(--primary)/0.25)]"
-                >
-                  Request Early Access
-                </button>
-              </form>
-              {result && (
-                <p className="text-sm text-green-600 mt-4">{result}</p>
-              )}
-            </div>
-          </div>
+        <div className="mb-6 mt-6 flex justify-center gap-4">
+          <a
+            href="https://my.leaddaily.app/leads"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-lg bg-accent px-6 py-2 text-base font-semibold text-white shadow hover:bg-accent/90 transition-colors"
+          >
+            🚀 Try the Demo App
+          </a>
+          <a
+            href="https://my.leaddaily.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-lg bg-primary px-6 py-2 text-base font-semibold text-white shadow hover:bg-primary-dark transition-colors"
+          >
+            Take Me There
+          </a>
         </div>
 
         <p className="mt-4 text-xs text-gray-400">
-          Join waitlist to get 1000+ leads per month.
+          Take the first step to get 1000s leads per month for your products
         </p>
       </div>
     </section>
@@ -227,7 +188,7 @@ const features = [
       </svg>
     ),
     title: "Send & Schedule",
-    desc: "Send emails instantly or schedule them for the perfect time. Automate follow-up sequences to maximize your response rates.",
+    desc: "Send emails instantly or schedule them daily. Automate follow-up sequences to maximize your response rates.",
   },
   {
     icon: (
@@ -364,10 +325,10 @@ const plans = [
     desc: "Perfect for trying things out",
     features: [
       "1 product",
-      "Up to 50 leads",
+      "Up to 500 leads/month",
+      "AI target audience recommendation",
       "AI email generation",
       "Lead contact export",
-      "Email sending",
     ],
     cta: "Start Free",
     popular: false,
@@ -377,16 +338,16 @@ const plans = [
     price: "$4.99",
     originalPrice: "$7.99",
     period: "/month",
-    desc: "Great for growing businesses",
+    desc: "Great for indie developers and small businesses who just start out",
     features: [
       "Up to 5 products",
-      "Up to 1,000 leads/month",
+      "Up to 5,000 leads/month",
       "AI target audience recommendation",
       "AI email generation",
       "Lead contact export",
       "Email sending and scheduling",
-      "Product management dashboard",
-      "Priority support",
+      "Product and lead management dashboard",
+      "Email support",
     ],
     cta: "Get Started",
     popular: true,
@@ -396,7 +357,7 @@ const plans = [
     price: "$7.99",
     originalPrice: "$12.99",
     period: "/month",
-    desc: "For teams that need more power",
+    desc: "For growing businesses that need more power",
     features: [
       "Up to 20 products",
       "Up to 5,000 leads/month",
@@ -405,11 +366,11 @@ const plans = [
       "Lead contact export",
       "Email sending and scheduling",
       "Follow-up sequence",
-      "Product management dashboard",
+      "Product and lead management dashboard",
       "Use your own email domain",
       "Priority support",
     ],
-    cta: "Scale Up",
+    cta: "Get Started",
     popular: false,
   },
 ];
@@ -489,7 +450,7 @@ function Pricing() {
                     ? "bg-primary text-white shadow-sm hover:bg-primary-dark hover:shadow-md"
                     : "border border-gray-300 text-gray-700 hover:border-primary hover:text-primary"
                 }`}
-                onClick={scrollToHero}
+                onClick={p.cta === "Get Started" ? () => window.open("https://my.leaddaily.app", "_blank") : scrollToHero}
               >
                 {p.cta}
               </button>
