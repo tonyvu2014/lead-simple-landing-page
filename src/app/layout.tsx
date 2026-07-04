@@ -15,11 +15,15 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://leaddaily.app"),
   title: {
-    default: "LeadDaily.App - Grow Your Leads Every Day Using AI",
+    default: "LeadDaily.App - AI Lead Generation & Cold Email for Indie Hackers, Startups, and Small Businesses",
     template: "%s | LeadDaily.App",
   },
   description:
-    "LeadDaily.App uses AI to find potential leads, generate customised cold and follow-up emails, and lets you send or schedule them — all in one place.",
+    `LeadDaily.app is an AI-powered lead generation and cold email platform built for indie developers, startup founders, and small businesses looking to acquire their first customers without spending a fortune.
+
+     Simply describe your product or ideal customer, and LeadDaily.app automatically discovers qualified business leads and verified email addresses from public online sources. It then generates highly personalized cold emails and intelligent follow-up sequences using AI, allowing you to send immediately or schedule campaigns from a single, easy-to-use dashboard.
+
+     Whether you're launching a SaaS product, validating a startup idea, promoting a new service, or growing a small business, LeadDaily.app helps you find potential customers, start meaningful conversations, and generate more sales—faster, smarter, and at a fraction of the cost of traditional outbound sales tools.`,
   keywords: [
     "AI lead generation",
     "cold email",
@@ -30,30 +34,41 @@ export const metadata: Metadata = {
     "sales outreach",
     "lead conversion",
     "LeadDaily.App",
+    "AI-powered sales",
+    "lead generation for startups",
+    "lead generation for small businesses",
+    "lead generation for indie hackers",
   ],
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
-    title: "LeadDaily.App - Grow Your Leads Every Day Using AI",
-    description:
-      "LeadDaily.App uses AI to find potential leads, generate customised cold and follow-up emails, and lets you send or schedule them — all in one place.",
+    title: "LeadDaily.App - AI Lead Generation & Cold Email for Indie Hackers, Startups, and Small Businesses",
+    description: `LeadDaily.app is an AI-powered lead generation and cold email platform built for indie developers, startup founders, and small businesses looking to acquire their first customers without spending a fortune on ads.
+
+Simply describe your product or ideal customer, and LeadDaily.app automatically discovers qualified business leads and verified email addresses from public online sources. It then generates highly personalized cold emails and intelligent follow-up sequences using AI, allowing you to send immediately or schedule campaigns from a single, easy-to-use dashboard.
+
+Whether you're launching a SaaS product, validating a startup idea, promoting a new service, or growing a small business, LeadDaily.app helps you find potential customers, start meaningful conversations, and generate more sales—faster, smarter, and at a fraction of the cost of traditional outbound sales tools.`,
     siteName: "LeadDaily.App",
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "LeadDaily.App - Grow your leads every day using AI",
+        alt: "LeadDaily.App - AI Lead Generation & Cold Email for Indie Hackers, Startups, and Small Businesses",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LeadDaily.App - Grow Your Leads Every Day Using AI",
+    title: "LeadDaily.App - AI Lead Generation & Cold Email for Indie Hackers, Startups, and Small Businesses",
     description:
-      "LeadDaily.App uses AI to find potential leads, generate customised cold and follow-up emails, and lets you send or schedule them — all in one place.",
+      `LeadDaily.app is an AI-powered lead generation and cold email platform built for indie developers, startup founders, and small businesses looking to acquire their first customers without spending a fortune on ads.
+
+      Simply describe your product or ideal customer, and LeadDaily.app automatically discovers qualified business leads and verified email addresses from public online sources. It then generates highly personalized cold emails and intelligent follow-up sequences using AI, allowing you to send immediately or schedule campaigns from a single, easy-to-use dashboard.
+
+      Whether you're launching a SaaS product, validating a startup idea, promoting a new service, or growing a small business, LeadDaily.app helps you find potential customers, start meaningful conversations, and generate more sales—faster, smarter, and at a fraction of the cost of traditional outbound sales tools.`,
     images: ["/opengraph-image"],
   },
   robots: {

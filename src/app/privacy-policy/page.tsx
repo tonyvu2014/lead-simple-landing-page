@@ -448,7 +448,7 @@ export default function PrivacyPolicy() {
                 LeadDaily<span className="text-primary">.App</span>
               </span>
               <p className="text-xs text-gray-500">
-                Grow Your Leads Everyday Using AI.
+                AI Lead Generation & Cold Email for Indie Hackers, Startups, and Small Businesses
               </p>
             </div>
           </div>

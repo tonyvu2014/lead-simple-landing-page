@@ -116,21 +116,23 @@ function Hero() {
       <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-primary/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-32 -bottom-32 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
 
-      <div className="relative mx-auto max-w-4xl px-6 text-center">
+      <div className="relative mx-auto max-w-5xl px-6 text-center">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
           <span className="inline-block h-2 w-2 rounded-full bg-primary animate-pulse" />
           AI-Powered Lead Generation
         </div>
-        <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
-          Grow Your Leads Everyday{" "}
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+          AI Lead Generation & Cold Email Automation {" "} <br/>
           <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Using AI
+            for Indie Hackers, Startups, and Small Businesses
           </span>
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-600 sm:text-xl">
-          LeadDaily.App discovers potential leads&apos; emails online based on
-          your product description, crafts customised cold &amp; follow-up
-          emails, and lets you send or schedule them — all from one dashboard.
+        <p className="mx-auto mt-6 max-w-8xl text-lg text-gray-600 sm:text-xl">
+          LeadDaily.app is an AI-powered lead generation and cold email platform built for indie developers, startup founders, and small businesses looking to acquire their first customers without spending a fortune.
+          <br/>
+          Simply describe your product or ideal customer, and LeadDaily.app automatically discovers qualified business leads and verified email addresses from public online sources. It then generates cold emails and intelligent follow-up sequences using AI, allowing you to send immediately or schedule campaigns from a single, easy-to-use dashboard.
+          <br/>
+          Whether you're launching a SaaS product, validating a startup idea, promoting a new service, or growing a small business, LeadDaily.app helps you find potential customers, start meaningful conversations, and generate more sales—faster, smarter, and at a fraction of the cost of traditional outbound sales tools.
         </p>
 
 
@@ -559,7 +561,7 @@ function Footer() {
               LeadDaily<span className="text-primary">.App</span>
             </span>
             <p className="text-xs text-gray-500">
-              Grow Your Leads Everyday Using AI.
+              AI Lead Generation & Cold Email for Indie Hackers, Startups, and Small Businesses
             </p>
           </div>
         </div>
