@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HomePageClient from "./HomePageClient";
 
-const siteUrl = "https://leaddaily.app";
+const siteUrl = "https://www.leaddaily.app";
 
 export const metadata: Metadata = {
   title: "LeadDaily.App - AI Lead Generation and Cold Email Automation",
@@ -72,36 +72,6 @@ const schemaGraph = {
       publisher: {
         "@id": `${siteUrl}/#organization`,
       },
-    },
-    {
-      "@type": "FAQPage",
-      "@id": `${siteUrl}/#faq`,
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "How does LeadDaily.App find leads?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "You describe your product or service and target audience, and our AI searches the web to find relevant people and businesses with publicly available email addresses that match your criteria.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Do I need any technical skills to use it?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. LeadDaily.App is designed to be intuitive: describe your product, review leads and generated emails, and send outreach.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Can I schedule emails to be sent later?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes. On paid plans you can schedule emails for a specific date and time and set up follow-up sequences.",
-          },
-        },
-      ],
     },
   ],
 };

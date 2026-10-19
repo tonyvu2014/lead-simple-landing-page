@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Privacy Policy – LeadDaily.App",
+    title: "Privacy Policy",
     description:
       "Read the LeadDaily.App Privacy Policy to understand how we collect, use, and protect your personal data.",
     images: ["/opengraph-image"],
@@ -61,10 +61,10 @@ export default function PrivacyPolicy() {
             </span>
           </Link>
           <Link
-            href="/#hero"
+            href="https://my.leaddaily.app"
             className="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white transition hover:bg-primary-dark"
           >
-            Get Early Access
+            Take Me There
           </Link>
         </div>
       </nav>

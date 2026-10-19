@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://leaddaily.app"),
+  metadataBase: new URL("https://www.leaddaily.app"),
   title: {
     default: "LeadDaily.App - AI Lead Generation & Cold Email for Indie Hackers, Startups, and Small Businesses",
     template: "%s | LeadDaily.App",
