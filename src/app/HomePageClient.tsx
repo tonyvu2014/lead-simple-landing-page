@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 /* ─── Logo Component ─── */
 function Logo({ className = "h-8 w-8" }: { className?: string }) {
@@ -587,6 +588,7 @@ export default function HomePageClient() {
       <FAQ />
       <Footer />
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
