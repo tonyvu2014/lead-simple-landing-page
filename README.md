@@ -20,6 +20,14 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Blog publishing
+
+Blog articles live as JSON files in `content/blog/` and are rendered as static pages at `/blog` and `/blog/[slug]`. The sitemap includes the index and every published article.
+
+The GitHub Actions workflow in `.github/workflows/publish-blog.yml` runs every Wednesday and Friday at 14:00 UTC. It generates one article with the OpenAI API, validates and commits it to the repository, then the repository's Vercel integration deploys the update. To enable it, add an `OPENAI_API_KEY` Actions repository secret and make sure Actions are enabled. The workflow has scoped `contents: write` permission to commit new articles. If deployments are not triggered by repository pushes, add a `VERCEL_DEPLOY_HOOK_URL` Actions secret.
+
+Use `workflow_dispatch` to publish an article manually. Generated articles are attributed to the LeadDaily Editorial team and are expected to be reviewed for accuracy before relying on factual claims.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

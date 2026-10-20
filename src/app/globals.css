@@ -29,3 +29,45 @@ body {
   color: var(--color-foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+.prose-content {
+  max-width: 68ch;
+  margin-top: 2.25rem;
+  color: var(--color-gray-700);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+.prose-content section + section {
+  margin-top: 2.5rem;
+}
+
+.prose-content h2 {
+  margin-bottom: 0.75rem;
+  color: var(--color-gray-900);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.prose-content p + p {
+  margin-top: 1rem;
+}
+
+.prose-content ul,
+.prose-content ol {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.prose-content ul {
+  list-style: disc;
+}
+
+.prose-content ol {
+  list-style: decimal;
+}
+
+.prose-content li + li {
+  margin-top: 0.5rem;
+}

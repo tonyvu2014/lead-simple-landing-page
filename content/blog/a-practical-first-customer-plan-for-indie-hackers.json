@@ -1,0 +1,76 @@
+{
+  "title": "A Practical First-Customer Plan for Indie Hackers",
+  "slug": "first-customer-plan-indie-hackers",
+  "description": "A focused, low-cost way to find early buyers, start useful conversations, and learn what to improve before you scale customer acquisition.",
+  "publishedAt": "2026-10-20",
+  "category": "Customer acquisition",
+  "readingTime": 6,
+  "targetKeyword": "first customers for a startup",
+  "format": "A 7-day playbook",
+  "author": "LeadDaily Editorial",
+  "takeaway": "Your first customer plan is a learning loop: choose one narrow audience, make a relevant offer, speak with real prospects, and let what you hear shape the next week.",
+  "sections": [
+    {
+      "id": "start-with-one-specific-buyer",
+      "heading": "Start with one specific buyer",
+      "paragraphs": [
+        "When a product is new, it is tempting to describe it as useful for every company or every person with the same problem. That broad framing makes prospecting harder: you cannot tell where to look, what to say, or whether a conversation is a good fit.",
+        "Write a simple working profile instead. Name the role, the kind of business, the situation that makes the problem urgent, and what that person does today. It is a hypothesis, not a permanent niche. You are making the first week small enough to learn from."
+      ],
+      "bullets": [],
+      "steps": [
+        "Choose a buyer you can reach directly, not just a market that sounds large.",
+        "Describe a recent event that would make the problem worth solving now.",
+        "List the workaround the buyer probably uses and what it costs in time or attention."
+      ]
+    },
+    {
+      "id": "find-evidence-before-building-a-list",
+      "heading": "Find evidence before building a list",
+      "paragraphs": [
+        "A useful prospect list is built around signs of fit, not a high row count. Look for public signals such as a hiring post, a recently launched product, a new location, or a team describing the problem you address. These clues give you a reason to contact someone and help you decide whom not to contact.",
+        "Start with ten to twenty carefully selected prospects. Keep a note for each person about the signal you noticed and why your product might matter. If that note is hard to write, the prospect may not be a priority yet."
+      ],
+      "bullets": [
+        "Role and company fit the buyer profile.",
+        "A specific public signal suggests the problem may be current.",
+        "There is a plausible way to reach the person through a professional channel."
+      ],
+      "steps": []
+    },
+    {
+      "id": "make-the-first-message-about-their-context",
+      "heading": "Make the first message about their context",
+      "paragraphs": [
+        "A first outreach note does not need to sound clever. It needs to make the reason for writing clear and give the other person an easy way to respond. Mention the specific signal you saw, connect it to a problem you help with, and ask one modest question.",
+        "Avoid turning the note into a product tour. Early conversations are most valuable when you learn how the prospect describes the problem, what they have already tried, and what would make a solution worth switching to."
+      ],
+      "bullets": [],
+      "steps": [
+        "Open with a real, relevant observation.",
+        "Explain the problem you are exploring in one sentence.",
+        "Ask whether solving it is a priority, or offer a short conversation with no pressure."
+      ]
+    },
+    {
+      "id": "use-the-week-to-test-one-assumption",
+      "heading": "Use the week to test one assumption",
+      "paragraphs": [
+        "Give the experiment a clear boundary. For example, spend Monday identifying a small group, Tuesday checking fit, and Wednesday through Friday sending thoughtful notes and following up with anyone who engages. The point is not to maximize activity; it is to learn whether this audience recognizes the problem and responds to your proposed outcome.",
+        "Track a few plain-language outcomes: messages sent, replies, conversations booked, and the objections you heard. Record the words people use. Their vocabulary is often more useful for improving your positioning than another round of internal brainstorming."
+      ],
+      "bullets": [],
+      "steps": []
+    },
+    {
+      "id": "decide-what-to-change-next",
+      "heading": "Decide what to change next",
+      "paragraphs": [
+        "At the end of the week, look for patterns rather than treating one reply as a verdict. If people understand the problem but do not care about the proposed fix, revisit the value. If they care but do not trust the approach, identify what proof or smaller first step would reduce risk. If the right people never respond, check the audience, timing, and opening message before concluding that the market is not there.",
+        "Keep what worked, change one major assumption, and run another small test. A repeatable customer acquisition process begins as a series of honest, focused conversations."
+      ],
+      "bullets": [],
+      "steps": []
+    }
+  ]
+}

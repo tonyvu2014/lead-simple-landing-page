@@ -1,0 +1,80 @@
+{
+  "title": "A Repeatable Customer-Growth Checklist for Small Businesses",
+  "slug": "customer-growth-checklist-small-business",
+  "description": "A simple checklist for building a steadier customer pipeline by improving follow-up, referrals, and the experience after a first purchase.",
+  "publishedAt": "2026-10-12",
+  "category": "Small business growth",
+  "readingTime": 7,
+  "targetKeyword": "customer acquisition for small business",
+  "format": "An operating checklist",
+  "author": "LeadDaily Editorial",
+  "takeaway": "Small-business growth becomes more dependable when lead generation, follow-up, referrals, and customer retention are treated as one connected system.",
+  "sections": [
+    {
+      "id": "make-the-offer-easy-to-understand",
+      "heading": "Make the offer easy to understand",
+      "paragraphs": [
+        "Before investing more time in promotion, check whether a new customer can understand what you do, who it is for, and what to do next. A service page does not need elaborate copy, but it should answer the practical questions a buyer has before making contact: what is included, who is a good fit, and how the first step works.",
+        "Ask a recent customer to explain your offer in their own words. Confusion in that conversation is useful evidence. It may point to an unclear package, an assumption you make because you know the business well, or a missing example of the result you provide."
+      ],
+      "bullets": [
+        "One plain-language description of the customer and problem.",
+        "A visible next step with a realistic response expectation.",
+        "A short example or proof point that you can substantiate."
+      ],
+      "steps": []
+    },
+    {
+      "id": "capture-and-qualify-inquiries",
+      "heading": "Capture and qualify inquiries",
+      "paragraphs": [
+        "Leads are easy to lose when inquiries arrive across calls, social messages, and email. Use one simple place to record who contacted you, what they need, when you will follow up, and the next action. A spreadsheet can be enough when the volume is small; the important part is that every promising inquiry has an owner and a date.",
+        "Qualification should help both sides decide whether to continue. Ask a few practical questions about the need, timing, and constraints. Avoid collecting details you do not need just because a form allows it."
+      ],
+      "bullets": [],
+      "steps": [
+        "Record the source and contact details with permission.",
+        "Note the customer's need, timing, and any fit constraints.",
+        "Set a clear next step and follow-up date before closing the inquiry."
+      ]
+    },
+    {
+      "id": "follow-up-is-part-of-the-service",
+      "heading": "Treat follow-up as part of the service",
+      "paragraphs": [
+        "A thoughtful follow-up is not a sequence of pressure messages. It is a reliable way to make sure a customer has the information needed to decide. If someone asked for a quote, send it when promised, explain what happens next, and check in once after an appropriate interval if you have not heard back.",
+        "Make each message useful. Share a relevant answer, clarify a detail, or offer a simpler next step. If the prospect declines or asks not to be contacted, respect that immediately and update your records."
+      ],
+      "bullets": [],
+      "steps": []
+    },
+    {
+      "id": "build-referrals-around-a-good-outcome",
+      "heading": "Build referrals around a good outcome",
+      "paragraphs": [
+        "The best time to ask for a referral is after the customer has experienced a result they value, not at an arbitrary point in a campaign. Be specific about the kind of person you help, make the request easy to decline, and give customers a short description they can forward if they choose.",
+        "A referral process should never make the customer feel responsible for your growth. Thank them either way, and keep delivering the service that made the recommendation plausible."
+      ],
+      "bullets": [
+        "Choose a natural moment after a completed milestone.",
+        "Describe the type of introduction that would be useful.",
+        "Make it easy to say no and follow up with genuine thanks."
+      ],
+      "steps": []
+    },
+    {
+      "id": "review-the-whole-customer-journey",
+      "heading": "Review the whole customer journey",
+      "paragraphs": [
+        "Set aside a short block each month to review where customers came from, which inquiries became good-fit work, and where the process stalled. Include repeat business and referrals in that review. A channel that produces fewer inquiries may still be valuable if those customers are a stronger fit and stay longer.",
+        "Choose one improvement for the next month. You might simplify the inquiry form, clarify a service package, respond faster to new leads, or create a useful follow-up reminder. Small operational changes are easier to assess when you make them one at a time."
+      ],
+      "bullets": [],
+      "steps": [
+        "Compare lead sources with customer fit and follow-through.",
+        "Ask a few customers what made the decision easy or difficult.",
+        "Choose one change, set an owner, and review its effect next month."
+      ]
+    }
+  ]
+}

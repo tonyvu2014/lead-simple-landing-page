@@ -25,6 +25,7 @@ function Navbar() {
     { label: "How It Works", href: "#how-it-works" },
     { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
+    { label: "Blog", href: "/blog" },
     { label: "Privacy Policy", href: "/privacy-policy" },
   ];
   return (
